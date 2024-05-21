@@ -14,26 +14,39 @@ const Projects = () => {
         {
             id: 1,
             src: portfolioCss, 
+            demoLink: "https://kayam17.github.io/02-css-portfolio/",
+            liveCodeLink: "https://github.com/KayaM17/02-css-portfolio"
         },
         {
             id: 2,
             src: consoleJs,
+            demoLink: "https://kayam17.github.io/04-Console-Finances/",
+            liveCodeLink: "https://github.com/KayaM17/04-Console-Finances"
         },
         {
             id: 3,
             src: laptopWander,
+            demoLink: "https://kayam17.github.io/wandaweather/",
+            liveCodeLink: "https://github.com/KayaM17/wandaweather"
+            
         },
         {
             id: 4,
             src: passwordGenerator,
+            demoLink: "https://kayam17.github.io/05-password-generator/",
+            liveCodeLink: "https://github.com/KayaM17/05-password-generator"
         },
         {
             id: 5,
             src: quiz,
+            demoLink: "https://kayam17.github.io/06-Web-APIs-Quiz/",
+            liveCodeLink: "https://github.com/KayaM17/06-Web-APIs-Quiz"
         },
         {
             id: 6,
             src: workPlanner,
+            demoLink: "https://kayam17.github.io/07-daily-planner-app/",
+            liveCodeLink: "https://github.com/KayaM17/07-daily-planner-app"
         },
     ];
 
@@ -51,7 +64,7 @@ const Projects = () => {
                 </div>
 
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-                {projects.map(({ id, src }) => (
+                {projects.map(({ id, src, demoLink, liveCodeLink }) => (
                     <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
                         <img 
                         src={src} 
@@ -59,19 +72,19 @@ const Projects = () => {
                         className="rounded-md duration-200 hover:scale-105"
                         />
                         <div className="flex items-center justify-center">
-                            <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                            <a href={demoLink} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                                 Demo
-                            </button>
-                            <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                            </a>
+                            <a href={liveCodeLink} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                                 Code
-                            </button>
+                            </a>
                         </div>
                     </div>
                 ))}
                 </div>
             </div>
         </div>
-        );
-    };
+    );
+};
 
             export default Projects;

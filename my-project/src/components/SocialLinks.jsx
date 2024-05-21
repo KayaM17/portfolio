@@ -14,7 +14,7 @@ const SocialLinks = () => {
                     LinkedIn <FaLinkedin size={30} />
                 </>
             ),
-            href: "https://www.linkedin.com",
+            href: "https://www.linkedin.com/in/kaya-m/",
             style: 'rounded-tr-md'
         },
         {
@@ -25,29 +25,8 @@ const SocialLinks = () => {
                 </>
             ),
             href: "https://github.com/KayaM17",
-
-        },
-        {
-            id: 3,
-            child: (
-                <>
-                    Mail<HiOutlineMail size={30} />
-                </>
-            ),
-            href: "mailto:kaya.abiola5@gmail.com",
-
-        },
-        {
-            id: 4,
-            child: (
-                <>
-                    Resume <BsFillPersonLinesFill size={30} />
-                </>
-            ),
-            href: "/resume.pdf",
-            style: 'rounded-br-md',
-            download: true,
-        },
+        }
+        
     ]
 
 
